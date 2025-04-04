@@ -1,10 +1,13 @@
-package com.example.pawtend
+package com.example.pawtend.base
 
 import android.os.Bundle
+import androidx.activity.R
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import com.example.pawtend.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,25 +21,19 @@ class MainActivity : AppCompatActivity() {
 
         setInsets()
 
+//        val navController = binding.navHostFragment.getFragment<NavHostFragment>().navController
+//        val bottomNavigator = binding.bottomNav
+//        bottomNavigator.setupWithNavController(navController)
+
 
     }
-
-
-
-
-
-
-
-
-
 
 
     private fun setInsets() {
         ViewCompat.setOnApplyWindowInsetsListener(binding.root) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            v.setPadding(0, 0, 0, systemBars.bottom)
             insets
         }
     }
 }
-

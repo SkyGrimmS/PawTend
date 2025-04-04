@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">PawTend</string>
+
+
+
+    <string name="title_nav_cats">Cats</string>
+    <string name="title_nav_procedures">Procedures</string>
+    <string name="title_nav_food">Food</string>
+    <string name="title_nav_fun">Fun</string>
+    <string name="title_nav_settings">Settings</string>
+    <string name="title_home_page">My Cats</string>
+    <string name="btn_add_cat_description">Add Cat</string>
+
+
 </resources>
